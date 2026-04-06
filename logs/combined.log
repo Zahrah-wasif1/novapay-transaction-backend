@@ -1,0 +1,838 @@
+{"timestamp":"2026-04-06T00:06:51.605Z","level":"info","message":"Connected to MongoDB","service":"novapay-transaction-backend","database":"test","host":"ac-lp4vyjq-shard-00-02.nlde5ho.mongodb.net","port":27017}
+{"timestamp":"2026-04-06T00:06:51.624Z","level":"error","message":"Failed to initialize payroll worker","service":"novapay-transaction-backend","error":"Cannot find module '../config/redis'\nRequire stack:\n- C:\\Users\\dell\\Desktop\\NovaPay transaction backend\\services\\payroll-service\\controller\\payrollController.js\n- C:\\Users\\dell\\Desktop\\NovaPay transaction backend\\services\\payroll-service\\index.js\n- C:\\Users\\dell\\Desktop\\NovaPay transaction backend\\index.js","attempt":1}
+{"timestamp":"2026-04-06T00:06:51.629Z","level":"error","message":"Failed to connect to Redis","service":"novapay-transaction-backend","error":"Connection is closed."}
+{"timestamp":"2026-04-06T00:06:51.631Z","level":"warn","message":"Redis connection failed, continuing without Redis","service":"novapay-transaction-backend","error":"Connection is closed."}
+{"timestamp":"2026-04-06T00:06:51.633Z","level":"info","message":"Metrics initialized","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:06:51.640Z","level":"info","message":"NovaPay Transaction Backend started on port 8080","service":"novapay-transaction-backend","port":"8080","environment":"development","version":"1.0.0"}
+{"timestamp":"2026-04-06T00:06:54.638Z","level":"error","message":"Failed to initialize payroll worker","service":"novapay-transaction-backend","error":"Cannot find module '../config/redis'\nRequire stack:\n- C:\\Users\\dell\\Desktop\\NovaPay transaction backend\\services\\payroll-service\\controller\\payrollController.js\n- C:\\Users\\dell\\Desktop\\NovaPay transaction backend\\services\\payroll-service\\index.js\n- C:\\Users\\dell\\Desktop\\NovaPay transaction backend\\index.js","attempt":2}
+{"timestamp":"2026-04-06T00:06:57.648Z","level":"error","message":"Failed to initialize payroll worker","service":"novapay-transaction-backend","error":"Cannot find module '../config/redis'\nRequire stack:\n- C:\\Users\\dell\\Desktop\\NovaPay transaction backend\\services\\payroll-service\\controller\\payrollController.js\n- C:\\Users\\dell\\Desktop\\NovaPay transaction backend\\services\\payroll-service\\index.js\n- C:\\Users\\dell\\Desktop\\NovaPay transaction backend\\index.js","attempt":3}
+{"timestamp":"2026-04-06T00:07:00.666Z","level":"error","message":"Failed to initialize payroll worker","service":"novapay-transaction-backend","error":"Cannot find module '../config/redis'\nRequire stack:\n- C:\\Users\\dell\\Desktop\\NovaPay transaction backend\\services\\payroll-service\\controller\\payrollController.js\n- C:\\Users\\dell\\Desktop\\NovaPay transaction backend\\services\\payroll-service\\index.js\n- C:\\Users\\dell\\Desktop\\NovaPay transaction backend\\index.js","attempt":4}
+{"timestamp":"2026-04-06T00:07:03.681Z","level":"error","message":"Failed to initialize payroll worker","service":"novapay-transaction-backend","error":"Cannot find module '../config/redis'\nRequire stack:\n- C:\\Users\\dell\\Desktop\\NovaPay transaction backend\\services\\payroll-service\\controller\\payrollController.js\n- C:\\Users\\dell\\Desktop\\NovaPay transaction backend\\services\\payroll-service\\index.js\n- C:\\Users\\dell\\Desktop\\NovaPay transaction backend\\index.js","attempt":5}
+{"timestamp":"2026-04-06T00:07:42.983Z","level":"info","message":"Connected to MongoDB","service":"novapay-transaction-backend","database":"test","host":"ac-lp4vyjq-shard-00-00.nlde5ho.mongodb.net","port":27017}
+{"timestamp":"2026-04-06T00:07:42.998Z","level":"error","message":"Failed to connect to Redis","service":"novapay-transaction-backend","error":"Connection is closed."}
+{"timestamp":"2026-04-06T00:08:07.232Z","level":"info","message":"Connected to MongoDB","service":"novapay-transaction-backend","database":"test","host":"ac-lp4vyjq-shard-00-01.nlde5ho.mongodb.net","port":27017}
+{"timestamp":"2026-04-06T00:08:07.257Z","level":"error","message":"Failed to connect to Redis","service":"novapay-transaction-backend","error":"Connection is closed."}
+{"timestamp":"2026-04-06T00:08:07.258Z","level":"warn","message":"Redis connection failed, continuing without Redis","service":"novapay-transaction-backend","error":"Connection is closed."}
+{"timestamp":"2026-04-06T00:08:07.259Z","level":"info","message":"Metrics initialized","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:08:07.265Z","level":"info","message":"NovaPay Transaction Backend started on port 8080","service":"novapay-transaction-backend","port":"8080","environment":"development","version":"1.0.0"}
+{"timestamp":"2026-04-06T00:08:07.366Z","level":"error","message":"Failed to initialize payroll worker","service":"novapay-transaction-backend","error":"Cannot find module '../config/redis'\nRequire stack:\n- C:\\Users\\dell\\Desktop\\NovaPay transaction backend\\services\\payroll-service\\controller\\payrollController.js\n- C:\\Users\\dell\\Desktop\\NovaPay transaction backend\\services\\payroll-service\\index.js\n- C:\\Users\\dell\\Desktop\\NovaPay transaction backend\\index.js","attempt":1}
+{"timestamp":"2026-04-06T00:08:10.374Z","level":"error","message":"Failed to initialize payroll worker","service":"novapay-transaction-backend","error":"Cannot find module '../config/redis'\nRequire stack:\n- C:\\Users\\dell\\Desktop\\NovaPay transaction backend\\services\\payroll-service\\controller\\payrollController.js\n- C:\\Users\\dell\\Desktop\\NovaPay transaction backend\\services\\payroll-service\\index.js\n- C:\\Users\\dell\\Desktop\\NovaPay transaction backend\\index.js","attempt":2}
+{"timestamp":"2026-04-06T00:08:13.384Z","level":"error","message":"Failed to initialize payroll worker","service":"novapay-transaction-backend","error":"Cannot find module '../config/redis'\nRequire stack:\n- C:\\Users\\dell\\Desktop\\NovaPay transaction backend\\services\\payroll-service\\controller\\payrollController.js\n- C:\\Users\\dell\\Desktop\\NovaPay transaction backend\\services\\payroll-service\\index.js\n- C:\\Users\\dell\\Desktop\\NovaPay transaction backend\\index.js","attempt":3}
+{"timestamp":"2026-04-06T00:08:18.462Z","level":"info","message":"Connected to MongoDB","service":"novapay-transaction-backend","database":"test","host":"ac-lp4vyjq-shard-00-01.nlde5ho.mongodb.net","port":27017}
+{"timestamp":"2026-04-06T00:08:18.481Z","level":"error","message":"Failed to connect to Redis","service":"novapay-transaction-backend","error":"Connection is closed."}
+{"timestamp":"2026-04-06T00:08:18.482Z","level":"warn","message":"Redis connection failed, continuing without Redis","service":"novapay-transaction-backend","error":"Connection is closed."}
+{"timestamp":"2026-04-06T00:08:18.482Z","level":"info","message":"Metrics initialized","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:08:18.486Z","level":"info","message":"NovaPay Transaction Backend started on port 8080","service":"novapay-transaction-backend","port":"8080","environment":"development","version":"1.0.0"}
+{"timestamp":"2026-04-06T00:08:18.785Z","level":"info","message":"Payroll worker initialized successfully","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:08:37.657Z","level":"info","message":"Connected to MongoDB","service":"novapay-transaction-backend","database":"test","host":"ac-lp4vyjq-shard-00-00.nlde5ho.mongodb.net","port":27017}
+{"timestamp":"2026-04-06T00:08:37.676Z","level":"error","message":"Failed to connect to Redis","service":"novapay-transaction-backend","error":"Connection is closed."}
+{"timestamp":"2026-04-06T00:08:51.955Z","level":"info","message":"Connected to MongoDB","service":"novapay-transaction-backend","database":"test","host":"ac-lp4vyjq-shard-00-01.nlde5ho.mongodb.net","port":27017}
+{"timestamp":"2026-04-06T00:08:52.012Z","level":"error","message":"Failed to connect to Redis","service":"novapay-transaction-backend","error":"Connection is closed."}
+{"timestamp":"2026-04-06T00:08:52.015Z","level":"warn","message":"Redis connection failed, continuing without Redis","service":"novapay-transaction-backend","error":"Connection is closed."}
+{"timestamp":"2026-04-06T00:08:52.024Z","level":"info","message":"Metrics initialized","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:08:52.084Z","level":"info","message":"NovaPay Transaction Backend started on port 8080","service":"novapay-transaction-backend","port":"8080","environment":"development","version":"1.0.0"}
+{"timestamp":"2026-04-06T00:08:52.228Z","level":"info","message":"Payroll worker initialized successfully","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:09:12.273Z","level":"info","message":"Incoming request","service":"novapay-transaction-backend","requestId":"ccde96ba-5474-413a-8876-1d99887c5ee7","method":"GET","url":"/health","userAgent":"Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.7920","ip":"::1"}
+{"timestamp":"2026-04-06T00:09:21.036Z","level":"info","message":"Incoming request","service":"novapay-transaction-backend","requestId":"970d4d10-b816-4284-84e5-41d6ed9fbd3b","method":"GET","url":"/api/accounts","userAgent":"Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.7920","ip":"::1"}
+{"timestamp":"2026-04-06T00:09:28.791Z","level":"info","message":"Incoming request","service":"novapay-transaction-backend","requestId":"49d50312-4cc2-475d-8fcc-894b9e93abb6","method":"GET","url":"/api/employees/payroll/active/employer_123","userAgent":"Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.7920","ip":"::1"}
+{"timestamp":"2026-04-06T00:10:08.825Z","level":"info","message":"Received SIGINT. Starting graceful shutdown...","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:10:16.346Z","level":"info","message":"Connected to MongoDB","service":"novapay-transaction-backend","database":"test","host":"ac-lp4vyjq-shard-00-02.nlde5ho.mongodb.net","port":27017}
+{"timestamp":"2026-04-06T00:10:16.376Z","level":"error","message":"Failed to connect to Redis","service":"novapay-transaction-backend","error":"Connection is closed."}
+{"timestamp":"2026-04-06T00:10:16.376Z","level":"warn","message":"Redis connection failed, continuing without Redis","service":"novapay-transaction-backend","error":"Connection is closed."}
+{"timestamp":"2026-04-06T00:10:16.377Z","level":"info","message":"Metrics initialized","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:10:16.380Z","level":"info","message":"NovaPay Transaction Backend started on port 8080","service":"novapay-transaction-backend","port":"8080","environment":"development","version":"1.0.0"}
+{"timestamp":"2026-04-06T00:10:16.438Z","level":"info","message":"Payroll worker initialized successfully","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:10:38.879Z","level":"info","message":"Received SIGINT. Starting graceful shutdown...","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:16:10.391Z","level":"warn","message":"Redis not available yet, retrying payroll worker initialization...","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:16:10.562Z","level":"info","message":"Connected to MongoDB","service":"novapay-transaction-backend","database":"test","host":"ac-lp4vyjq-shard-00-01.nlde5ho.mongodb.net","port":27017}
+{"timestamp":"2026-04-06T00:16:10.593Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":""}
+{"timestamp":"2026-04-06T00:16:10.595Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:16:10.596Z","level":"warn","message":"Redis connection failed, continuing without Redis","service":"novapay-transaction-backend","error":"Connection is closed."}
+{"timestamp":"2026-04-06T00:16:10.597Z","level":"info","message":"Metrics initialized","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:16:10.605Z","level":"info","message":"NovaPay Transaction Backend started on port 8080","service":"novapay-transaction-backend","port":"8080","environment":"development","version":"1.0.0"}
+{"timestamp":"2026-04-06T00:16:10.656Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":""}
+{"timestamp":"2026-04-06T00:16:10.658Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:16:10.764Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":""}
+{"timestamp":"2026-04-06T00:16:10.765Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:16:10.918Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":""}
+{"timestamp":"2026-04-06T00:16:10.919Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:16:11.136Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":""}
+{"timestamp":"2026-04-06T00:16:11.137Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:16:11.399Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":""}
+{"timestamp":"2026-04-06T00:16:11.400Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:16:11.710Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":""}
+{"timestamp":"2026-04-06T00:16:11.711Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:16:12.070Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":""}
+{"timestamp":"2026-04-06T00:16:12.071Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:16:12.411Z","level":"warn","message":"Redis not available yet, retrying payroll worker initialization...","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:16:12.475Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":""}
+{"timestamp":"2026-04-06T00:16:12.476Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:16:12.942Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":""}
+{"timestamp":"2026-04-06T00:16:12.942Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:16:13.458Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":""}
+{"timestamp":"2026-04-06T00:16:13.459Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:16:14.024Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":""}
+{"timestamp":"2026-04-06T00:16:14.025Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:16:14.412Z","level":"warn","message":"Redis not available yet, retrying payroll worker initialization...","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:16:14.636Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":""}
+{"timestamp":"2026-04-06T00:16:14.702Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:16:15.379Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":""}
+{"timestamp":"2026-04-06T00:16:15.380Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:16:16.086Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":""}
+{"timestamp":"2026-04-06T00:16:16.087Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:16:16.429Z","level":"warn","message":"Redis not available yet, retrying payroll worker initialization...","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:16:16.849Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":""}
+{"timestamp":"2026-04-06T00:16:16.850Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:16:17.655Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":""}
+{"timestamp":"2026-04-06T00:16:17.656Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:16:18.449Z","level":"warn","message":"Redis not available yet, retrying payroll worker initialization...","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:16:18.521Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":""}
+{"timestamp":"2026-04-06T00:16:18.528Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:16:19.448Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":""}
+{"timestamp":"2026-04-06T00:16:19.449Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:16:20.413Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":""}
+{"timestamp":"2026-04-06T00:16:20.414Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:16:20.456Z","level":"error","message":"Max initialization attempts reached for payroll worker","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:16:21.428Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":""}
+{"timestamp":"2026-04-06T00:16:21.430Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:16:22.485Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":""}
+{"timestamp":"2026-04-06T00:16:22.486Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:16:23.594Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":""}
+{"timestamp":"2026-04-06T00:16:23.595Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:16:24.748Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":""}
+{"timestamp":"2026-04-06T00:16:24.748Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:16:25.958Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":""}
+{"timestamp":"2026-04-06T00:16:25.959Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:16:27.226Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":""}
+{"timestamp":"2026-04-06T00:16:27.226Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:16:28.537Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":""}
+{"timestamp":"2026-04-06T00:16:28.540Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:16:29.908Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":""}
+{"timestamp":"2026-04-06T00:16:29.909Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:16:31.318Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":""}
+{"timestamp":"2026-04-06T00:16:31.318Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:16:32.782Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":""}
+{"timestamp":"2026-04-06T00:16:32.784Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:16:34.296Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":""}
+{"timestamp":"2026-04-06T00:16:34.298Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:16:35.867Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":""}
+{"timestamp":"2026-04-06T00:16:35.873Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:16:37.482Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":""}
+{"timestamp":"2026-04-06T00:16:37.484Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:16:39.208Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":""}
+{"timestamp":"2026-04-06T00:16:39.297Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:16:41.009Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":""}
+{"timestamp":"2026-04-06T00:16:41.010Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:16:42.771Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":""}
+{"timestamp":"2026-04-06T00:16:42.772Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:16:44.578Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":""}
+{"timestamp":"2026-04-06T00:16:44.578Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:16:46.441Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":""}
+{"timestamp":"2026-04-06T00:16:46.442Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:16:48.356Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":""}
+{"timestamp":"2026-04-06T00:16:48.357Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:16:50.318Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":""}
+{"timestamp":"2026-04-06T00:16:50.319Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:16:52.322Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":""}
+{"timestamp":"2026-04-06T00:16:52.323Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:16:54.335Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":""}
+{"timestamp":"2026-04-06T00:16:54.336Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:16:56.343Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":""}
+{"timestamp":"2026-04-06T00:16:56.344Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:16:58.354Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":""}
+{"timestamp":"2026-04-06T00:16:58.354Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:17:00.356Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":""}
+{"timestamp":"2026-04-06T00:17:00.357Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:17:02.361Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":""}
+{"timestamp":"2026-04-06T00:17:02.362Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:17:04.365Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":""}
+{"timestamp":"2026-04-06T00:17:04.366Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:17:06.384Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":""}
+{"timestamp":"2026-04-06T00:17:06.386Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:17:08.399Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":""}
+{"timestamp":"2026-04-06T00:17:08.400Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:17:10.413Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":""}
+{"timestamp":"2026-04-06T00:17:10.413Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:17:12.426Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":""}
+{"timestamp":"2026-04-06T00:17:12.427Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:17:14.445Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":""}
+{"timestamp":"2026-04-06T00:17:14.446Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:17:16.450Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":""}
+{"timestamp":"2026-04-06T00:17:16.451Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:17:18.453Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":""}
+{"timestamp":"2026-04-06T00:17:18.454Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:17:20.467Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":""}
+{"timestamp":"2026-04-06T00:17:20.468Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:17:22.476Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":""}
+{"timestamp":"2026-04-06T00:17:22.477Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:17:24.483Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":""}
+{"timestamp":"2026-04-06T00:17:24.483Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:17:26.512Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":""}
+{"timestamp":"2026-04-06T00:17:26.548Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:17:28.562Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":""}
+{"timestamp":"2026-04-06T00:17:28.562Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:17:30.566Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":""}
+{"timestamp":"2026-04-06T00:17:30.567Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:17:32.582Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":""}
+{"timestamp":"2026-04-06T00:17:32.583Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:17:34.588Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":""}
+{"timestamp":"2026-04-06T00:17:34.589Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:17:36.600Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":""}
+{"timestamp":"2026-04-06T00:17:36.601Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:17:38.609Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":""}
+{"timestamp":"2026-04-06T00:17:38.610Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:17:40.623Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":""}
+{"timestamp":"2026-04-06T00:17:40.624Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:17:42.633Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":""}
+{"timestamp":"2026-04-06T00:17:42.633Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:17:44.647Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":""}
+{"timestamp":"2026-04-06T00:17:44.647Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:17:46.652Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":""}
+{"timestamp":"2026-04-06T00:17:46.653Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:17:48.655Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":""}
+{"timestamp":"2026-04-06T00:17:48.656Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:17:50.673Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":""}
+{"timestamp":"2026-04-06T00:17:50.673Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:17:52.690Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":""}
+{"timestamp":"2026-04-06T00:17:52.691Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:17:54.699Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":""}
+{"timestamp":"2026-04-06T00:17:54.699Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:17:56.706Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":""}
+{"timestamp":"2026-04-06T00:17:56.707Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:17:58.713Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":""}
+{"timestamp":"2026-04-06T00:17:58.714Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:18:00.725Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":""}
+{"timestamp":"2026-04-06T00:18:00.725Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:18:02.734Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":""}
+{"timestamp":"2026-04-06T00:18:02.735Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:18:04.740Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":""}
+{"timestamp":"2026-04-06T00:18:04.740Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:18:20.435Z","level":"info","message":"Connected to MongoDB","service":"novapay-transaction-backend","database":"test","host":"ac-lp4vyjq-shard-00-00.nlde5ho.mongodb.net","port":27017}
+{"timestamp":"2026-04-06T00:18:20.458Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:18:20.459Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:18:20.460Z","level":"warn","message":"Redis connection failed, continuing without Redis","service":"novapay-transaction-backend","error":"Connection is closed."}
+{"timestamp":"2026-04-06T00:18:20.461Z","level":"info","message":"Metrics initialized","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:18:20.469Z","level":"info","message":"NovaPay Transaction Backend started on port 8080","service":"novapay-transaction-backend","port":"8080","environment":"development","version":"1.0.0"}
+{"timestamp":"2026-04-06T00:18:20.514Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:18:20.515Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:18:20.621Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:18:20.624Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:18:20.683Z","level":"warn","message":"Redis not available yet, retrying payroll worker initialization...","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:18:20.779Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:18:20.782Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:18:20.985Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:18:20.987Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:18:21.249Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:18:21.251Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:18:21.555Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:18:21.556Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:18:21.916Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:18:21.918Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:18:22.334Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:18:22.335Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:18:22.691Z","level":"warn","message":"Redis not available yet, retrying payroll worker initialization...","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:18:22.790Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:18:22.791Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:18:23.304Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:18:23.306Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:18:23.860Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:18:23.862Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:18:24.466Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:18:24.466Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:18:24.698Z","level":"warn","message":"Redis not available yet, retrying payroll worker initialization...","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:18:25.122Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:18:25.123Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:18:25.824Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:18:25.825Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:18:26.589Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:18:26.590Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:18:26.726Z","level":"warn","message":"Redis not available yet, retrying payroll worker initialization...","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:18:27.406Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:18:27.407Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:18:28.262Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:18:28.263Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:18:28.739Z","level":"warn","message":"Redis not available yet, retrying payroll worker initialization...","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:18:29.175Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:18:29.176Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:18:30.142Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:18:30.143Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:18:30.741Z","level":"error","message":"Max initialization attempts reached for payroll worker","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:18:31.159Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:18:31.160Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:18:32.217Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:18:32.217Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:18:33.319Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:18:33.320Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:18:34.477Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:18:34.479Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:18:35.689Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:18:35.691Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:18:36.951Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:18:36.952Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:18:38.268Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:18:38.269Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:18:39.634Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:18:39.634Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:18:41.048Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:18:41.049Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:18:42.504Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:18:42.505Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:18:44.022Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:18:44.023Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:18:45.594Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:18:45.596Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:18:47.209Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:18:47.210Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:18:48.875Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:18:48.876Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:18:50.592Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:18:50.594Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:18:52.353Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:18:52.355Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:18:54.170Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:18:54.171Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:18:56.027Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:18:56.029Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:18:57.943Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:18:57.945Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:18:59.911Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:18:59.913Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:19:01.925Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:19:01.925Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:19:03.938Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:19:03.939Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:19:05.955Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:19:05.956Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:19:07.961Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:19:07.963Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:19:09.983Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:19:09.984Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:19:11.998Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:19:11.999Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:19:14.005Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:19:14.007Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:19:16.018Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:19:16.019Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:19:18.033Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:19:18.034Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:19:20.040Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:19:20.041Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:19:22.054Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:19:22.054Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:19:24.069Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:19:24.071Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:19:26.082Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:19:26.083Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:19:28.094Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:19:28.095Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:19:30.105Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:19:30.106Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:19:32.118Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:19:32.120Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:19:34.125Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:19:34.127Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:19:36.138Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:19:36.139Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:19:38.147Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:19:38.148Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:19:40.153Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:19:40.155Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:19:42.162Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:19:42.163Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:19:44.176Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:19:44.177Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:19:46.183Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:19:46.184Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:19:48.197Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:19:48.198Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:19:50.212Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:19:50.213Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:19:52.222Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:19:52.223Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:19:54.240Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:19:54.242Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:19:56.250Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:19:56.251Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:19:58.258Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:19:58.260Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:20:00.267Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:20:00.269Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:20:02.271Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:20:02.271Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:20:04.286Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:20:04.288Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:20:06.301Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:20:06.303Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:20:08.311Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:20:08.312Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:20:10.321Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:20:10.322Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:20:12.326Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:20:12.327Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:20:14.330Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:20:14.331Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:20:16.335Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:20:16.336Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:20:18.349Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:20:18.351Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:20:20.362Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:20:20.363Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:20:22.380Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:20:22.381Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:20:24.391Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:20:24.392Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:20:26.402Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:20:26.404Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:20:28.415Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:20:28.415Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:20:30.434Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:20:30.435Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:20:32.443Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:20:32.444Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:20:34.456Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:20:34.458Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:20:36.472Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:20:36.473Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:20:38.475Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:20:38.476Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:20:40.486Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:20:40.487Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:20:42.497Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:20:42.497Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:20:44.503Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:20:44.504Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:20:46.516Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:20:46.516Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:20:48.524Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:20:48.525Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:20:50.540Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:20:50.541Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:20:56.166Z","level":"info","message":"Connected to MongoDB","service":"novapay-transaction-backend","database":"test","host":"ac-lp4vyjq-shard-00-01.nlde5ho.mongodb.net","port":27017}
+{"timestamp":"2026-04-06T00:20:56.182Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:20:56.184Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:20:56.185Z","level":"warn","message":"Redis connection failed, continuing without Redis","service":"novapay-transaction-backend","error":"Connection is closed."}
+{"timestamp":"2026-04-06T00:20:56.186Z","level":"info","message":"Metrics initialized","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:20:56.191Z","level":"info","message":"NovaPay Transaction Backend started on port 8080","service":"novapay-transaction-backend","port":"8080","environment":"development","version":"1.0.0"}
+{"timestamp":"2026-04-06T00:20:56.242Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:20:56.243Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:20:56.334Z","level":"warn","message":"Redis not available yet, retrying payroll worker initialization...","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:20:56.345Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:20:56.346Z","level":"warn","message":"Max Redis connection attempts reached, stopping retries","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:20:56.347Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:21:00.528Z","level":"info","message":"Connected to MongoDB","service":"novapay-transaction-backend","database":"test","host":"ac-lp4vyjq-shard-00-02.nlde5ho.mongodb.net","port":27017}
+{"timestamp":"2026-04-06T00:21:00.549Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:21:00.552Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:21:00.553Z","level":"warn","message":"Redis connection failed, continuing without Redis","service":"novapay-transaction-backend","error":"Connection is closed."}
+{"timestamp":"2026-04-06T00:21:00.553Z","level":"info","message":"Metrics initialized","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:21:00.556Z","level":"info","message":"NovaPay Transaction Backend started on port 8080","service":"novapay-transaction-backend","port":"8080","environment":"development","version":"1.0.0"}
+{"timestamp":"2026-04-06T00:21:00.611Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:21:00.612Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:21:00.716Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:21:00.717Z","level":"warn","message":"Max Redis connection attempts reached, stopping retries","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:21:00.719Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:21:00.858Z","level":"warn","message":"Redis not available yet, retrying payroll worker initialization...","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:21:03.868Z","level":"warn","message":"Redis not available yet, retrying payroll worker initialization...","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:21:06.869Z","level":"warn","message":"Redis not available yet, retrying payroll worker initialization...","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:21:12.235Z","level":"info","message":"Connected to MongoDB","service":"novapay-transaction-backend","database":"test","host":"ac-lp4vyjq-shard-00-00.nlde5ho.mongodb.net","port":27017}
+{"timestamp":"2026-04-06T00:21:12.252Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:21:12.254Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:21:12.255Z","level":"warn","message":"Redis connection failed, continuing without Redis","service":"novapay-transaction-backend","error":"Connection is closed."}
+{"timestamp":"2026-04-06T00:21:12.256Z","level":"info","message":"Metrics initialized","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:21:12.259Z","level":"info","message":"NovaPay Transaction Backend started on port 8080","service":"novapay-transaction-backend","port":"8080","environment":"development","version":"1.0.0"}
+{"timestamp":"2026-04-06T00:21:12.319Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:21:12.327Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:21:12.432Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:21:12.433Z","level":"warn","message":"Max Redis connection attempts reached, stopping retries","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:21:12.434Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:21:12.492Z","level":"warn","message":"Redis not available yet, retrying payroll worker initialization...","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:21:15.502Z","level":"warn","message":"Redis not available yet, retrying payroll worker initialization...","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:21:24.593Z","level":"info","message":"Connected to MongoDB","service":"novapay-transaction-backend","database":"test","host":"ac-lp4vyjq-shard-00-02.nlde5ho.mongodb.net","port":27017}
+{"timestamp":"2026-04-06T00:21:24.608Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:21:24.609Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:21:24.611Z","level":"warn","message":"Redis connection failed, continuing without Redis","service":"novapay-transaction-backend","error":"Connection is closed."}
+{"timestamp":"2026-04-06T00:21:24.612Z","level":"info","message":"Metrics initialized","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:21:24.614Z","level":"info","message":"NovaPay Transaction Backend started on port 8080","service":"novapay-transaction-backend","port":"8080","environment":"development","version":"1.0.0"}
+{"timestamp":"2026-04-06T00:21:24.665Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:21:24.665Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:21:24.772Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:21:24.775Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:21:24.910Z","level":"warn","message":"Redis not available yet, retrying payroll worker initialization...","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:21:24.926Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:21:24.928Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:21:25.144Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:21:25.145Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:21:25.409Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:21:25.411Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:21:25.717Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:21:25.718Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:21:26.071Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:21:26.072Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:21:26.479Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:21:26.481Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:21:26.945Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:21:26.947Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:21:27.456Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:21:27.456Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:21:27.920Z","level":"warn","message":"Redis not available yet, retrying payroll worker initialization...","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:21:28.016Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:21:28.017Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:21:28.619Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:21:28.620Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:21:29.272Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:21:29.273Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:21:29.987Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:21:29.988Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:21:30.751Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:21:30.752Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:21:30.924Z","level":"warn","message":"Redis not available yet, retrying payroll worker initialization...","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:21:31.558Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:21:31.560Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:21:32.412Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:21:32.412Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:21:33.316Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:21:33.316Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:21:33.936Z","level":"warn","message":"Redis not available yet, retrying payroll worker initialization...","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:21:34.270Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:21:34.271Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:21:35.280Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:21:35.281Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:21:36.332Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:21:36.333Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:21:36.939Z","level":"warn","message":"Redis not available yet, retrying payroll worker initialization...","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:21:36.939Z","level":"error","message":"Payroll worker initialization failed - Redis not available. Payroll features will be disabled.","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:21:37.437Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:21:37.438Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:21:38.602Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:21:38.603Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:21:39.809Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:21:39.810Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:21:41.067Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:21:41.068Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:21:42.369Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:21:42.370Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:21:43.722Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:21:43.722Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:21:45.130Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:21:45.131Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:21:46.582Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:21:46.583Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:21:48.088Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:21:48.090Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:21:49.644Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:21:49.645Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:21:51.253Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:21:51.256Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:21:52.920Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:21:52.920Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:21:54.627Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:21:54.628Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:21:56.392Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:21:56.393Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:21:58.207Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:21:58.208Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:22:00.064Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:22:00.066Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:22:01.975Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:22:01.976Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:22:03.938Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:22:03.939Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:22:05.954Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:22:05.955Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:22:07.964Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:22:07.965Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:22:09.226Z","level":"warn","message":"Redis not available yet, retrying payroll worker initialization...","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:22:09.264Z","level":"info","message":"Connected to MongoDB","service":"novapay-transaction-backend","database":"test","host":"ac-lp4vyjq-shard-00-02.nlde5ho.mongodb.net","port":27017}
+{"timestamp":"2026-04-06T00:22:09.278Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:22:09.967Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:22:09.967Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:22:11.972Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:22:11.973Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:22:13.981Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:22:13.982Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:22:15.991Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:22:15.993Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:22:17.999Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:22:18.001Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:22:20.020Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:22:20.022Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:22:22.027Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:22:22.029Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:22:24.046Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:22:24.048Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:22:26.055Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:22:26.058Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:22:28.071Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:22:28.072Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:22:30.083Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:22:30.085Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:22:32.088Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:22:32.090Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:22:34.102Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:22:34.103Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:22:36.113Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:22:36.114Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:22:38.132Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:22:38.134Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:22:40.150Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:22:40.152Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:22:42.162Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:22:42.164Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:22:44.172Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:22:44.174Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:22:46.180Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:22:46.181Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:22:48.195Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:22:48.197Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:22:50.204Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:22:50.206Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:22:52.220Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:22:52.222Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:22:54.235Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:22:54.237Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:22:56.241Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:22:56.243Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:22:58.249Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:22:58.250Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:23:00.257Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:23:00.258Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:23:02.275Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:23:02.277Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:23:04.290Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:23:04.292Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:36:44.315Z","level":"warn","message":"Redis not available yet, retrying payroll worker initialization...","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:36:44.459Z","level":"info","message":"Connected to MongoDB","service":"novapay-transaction-backend","database":"test","host":"ac-lp4vyjq-shard-00-01.nlde5ho.mongodb.net","port":27017}
+{"timestamp":"2026-04-06T00:36:44.483Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:36:44.486Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:36:44.487Z","level":"warn","message":"Redis connection failed, continuing without Redis","service":"novapay-transaction-backend","error":"Connection is closed."}
+{"timestamp":"2026-04-06T00:36:44.488Z","level":"info","message":"Metrics initialized","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:36:44.495Z","level":"info","message":"NovaPay Transaction Backend started on port 8080","service":"novapay-transaction-backend","port":"8080","environment":"development","version":"1.0.0"}
+{"timestamp":"2026-04-06T00:36:44.549Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:36:44.550Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:36:44.655Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:36:44.656Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:36:44.811Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:36:44.812Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:36:45.020Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:36:45.022Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:36:45.284Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:36:45.286Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:36:45.597Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:36:45.599Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:36:45.959Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:36:45.960Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:36:46.367Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:36:46.368Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:36:46.825Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:36:46.827Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:36:47.332Z","level":"warn","message":"Redis not available yet, retrying payroll worker initialization...","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:36:47.335Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:36:47.336Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:36:47.895Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:36:47.896Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:36:48.504Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:36:48.522Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:36:49.175Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:36:49.178Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:36:49.889Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:36:49.890Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:36:50.337Z","level":"warn","message":"Redis not available yet, retrying payroll worker initialization...","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:36:50.649Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:36:50.651Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:36:51.455Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:36:51.456Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:36:52.314Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:36:52.318Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:36:53.235Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:36:53.236Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:36:53.341Z","level":"warn","message":"Redis not available yet, retrying payroll worker initialization...","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:36:54.201Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:36:54.203Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:36:55.212Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:36:55.213Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:36:56.270Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:36:56.271Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:36:56.348Z","level":"warn","message":"Redis not available yet, retrying payroll worker initialization...","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:36:56.349Z","level":"error","message":"Payroll worker initialization failed - Redis not available. Payroll features will be disabled.","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:36:57.374Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:36:57.374Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:36:58.528Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:36:58.529Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:36:59.745Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:36:59.746Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:37:01.001Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:37:01.003Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:37:02.308Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:37:02.309Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:37:03.663Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:37:03.664Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:37:05.075Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:37:05.077Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:37:06.538Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:37:06.539Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:37:08.052Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:37:08.054Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:37:09.623Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:37:09.632Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:37:11.250Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:37:11.251Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:37:12.915Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:37:12.917Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:37:14.624Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:37:14.624Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:37:16.392Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:37:16.394Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:37:30.598Z","level":"info","message":"Connected to MongoDB","service":"novapay-transaction-backend","database":"test","host":"ac-lp4vyjq-shard-00-00.nlde5ho.mongodb.net","port":27017}
+{"timestamp":"2026-04-06T00:37:30.651Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:37:30.656Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:37:30.659Z","level":"warn","message":"Redis connection failed, continuing without Redis","service":"novapay-transaction-backend","error":"Connection is closed."}
+{"timestamp":"2026-04-06T00:37:30.660Z","level":"info","message":"Metrics initialized","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:37:30.669Z","level":"info","message":"NovaPay Transaction Backend started on port 8080","service":"novapay-transaction-backend","port":"8080","environment":"development","version":"1.0.0"}
+{"timestamp":"2026-04-06T00:37:30.707Z","level":"warn","message":"Redis not available yet, retrying payroll worker initialization...","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:37:30.713Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:37:30.715Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:37:30.821Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:37:30.824Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:37:30.990Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:37:30.993Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:37:31.203Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:37:31.204Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:37:31.471Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:37:31.473Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:37:31.783Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:37:31.784Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:37:32.143Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:37:32.144Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:37:32.549Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:37:32.551Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:37:33.016Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:37:33.017Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:37:33.533Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:37:33.534Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:37:33.713Z","level":"warn","message":"Redis not available yet, retrying payroll worker initialization...","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:37:34.091Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:37:34.093Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:37:34.701Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:37:34.702Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:37:35.364Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:37:35.365Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:37:36.080Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:37:36.081Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:37:36.722Z","level":"warn","message":"Redis not available yet, retrying payroll worker initialization...","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:37:36.849Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:37:36.851Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:37:37.655Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:37:37.660Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:37:38.525Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:37:38.526Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:37:39.433Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:37:39.434Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:37:39.729Z","level":"warn","message":"Redis not available yet, retrying payroll worker initialization...","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:37:40.400Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:37:40.401Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:37:41.414Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:37:41.415Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:37:42.473Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:37:42.473Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:37:42.733Z","level":"warn","message":"Redis not available yet, retrying payroll worker initialization...","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:37:42.733Z","level":"error","message":"Payroll worker initialization failed - Redis not available. Payroll features will be disabled.","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:37:43.575Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:37:43.576Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:37:44.736Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:37:44.737Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:37:45.950Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:37:45.951Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:37:47.215Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:37:47.218Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:37:48.521Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:37:48.522Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:37:49.875Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:37:49.877Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:38:00.880Z","level":"info","message":"Connected to MongoDB","service":"novapay-transaction-backend","database":"test","host":"ac-lp4vyjq-shard-00-01.nlde5ho.mongodb.net","port":27017}
+{"timestamp":"2026-04-06T00:38:00.915Z","level":"warn","message":"Redis not available, payroll features will be disabled","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:38:00.928Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:38:00.934Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:38:00.935Z","level":"warn","message":"Redis connection failed, continuing without Redis","service":"novapay-transaction-backend","error":"Connection is closed."}
+{"timestamp":"2026-04-06T00:38:00.936Z","level":"info","message":"Metrics initialized","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:38:00.940Z","level":"info","message":"NovaPay Transaction Backend started on port 8080","service":"novapay-transaction-backend","port":"8080","environment":"development","version":"1.0.0"}
+{"timestamp":"2026-04-06T00:38:00.994Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:38:00.995Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:38:01.104Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:38:01.106Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:38:01.261Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:38:01.262Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:38:01.477Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:38:01.478Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:38:01.742Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:38:01.743Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:38:02.055Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:38:02.056Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:38:02.409Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:38:02.410Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:38:02.818Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:38:02.819Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:38:03.282Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:38:03.284Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:38:03.796Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:38:03.796Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:38:04.356Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:38:04.359Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:38:04.964Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:38:04.966Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:38:05.630Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:38:05.631Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:38:06.342Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:38:06.343Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:38:07.113Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:38:07.126Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:38:07.921Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:38:07.922Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:38:08.779Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:38:08.781Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:38:09.693Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:38:09.694Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:38:10.653Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:38:10.653Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:38:11.665Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:38:11.667Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:38:12.730Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:38:12.733Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:38:13.842Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:38:13.866Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:38:15.021Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:38:15.022Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:38:16.232Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:38:16.233Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:38:17.496Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:38:17.497Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:38:18.812Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:38:18.813Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:38:20.178Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:38:20.179Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:38:21.591Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:38:21.592Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:38:23.053Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:38:23.054Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:38:24.562Z","level":"warn","message":"Redis client error (handled)","service":"novapay-transaction-backend","error":"connect ECONNREFUSED 127.0.0.1:6379"}
+{"timestamp":"2026-04-06T00:38:24.563Z","level":"warn","message":"Redis client connection closed (handled)","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:39:06.872Z","level":"info","message":"Connected to MongoDB","service":"novapay-transaction-backend","database":"test","host":"ac-lp4vyjq-shard-00-02.nlde5ho.mongodb.net","port":27017}
+{"timestamp":"2026-04-06T00:39:06.907Z","level":"warn","message":"Redis connection failed, continuing without Redis","service":"novapay-transaction-backend","error":"Connection is closed."}
+{"timestamp":"2026-04-06T00:39:06.908Z","level":"info","message":"Metrics initialized","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:39:06.914Z","level":"info","message":"NovaPay Transaction Backend started on port 8080","service":"novapay-transaction-backend","port":"8080","environment":"development","version":"1.0.0"}
+{"timestamp":"2026-04-06T00:39:06.991Z","level":"warn","message":"Redis not available, payroll features will be disabled","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:40:46.198Z","level":"warn","message":"Redis not available, payroll features will be disabled","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:40:46.264Z","level":"info","message":"Connected to MongoDB","service":"novapay-transaction-backend","database":"test","host":"ac-lp4vyjq-shard-00-01.nlde5ho.mongodb.net","port":27017}
+{"timestamp":"2026-04-06T00:40:46.323Z","level":"warn","message":"Redis connection failed, continuing without Redis","service":"novapay-transaction-backend","error":"Connection is closed."}
+{"timestamp":"2026-04-06T00:40:46.325Z","level":"info","message":"Metrics initialized","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:40:46.338Z","level":"info","message":"NovaPay Transaction Backend started on port 8080","service":"novapay-transaction-backend","port":"8080","environment":"development","version":"1.0.0"}
+{"timestamp":"2026-04-06T00:55:00.814Z","level":"warn","message":"Redis not available, payroll features will be disabled","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:55:00.881Z","level":"info","message":"Connected to MongoDB","service":"novapay-transaction-backend","database":"test","host":"ac-lp4vyjq-shard-00-02.nlde5ho.mongodb.net","port":27017}
+{"timestamp":"2026-04-06T00:55:00.916Z","level":"warn","message":"Redis connection failed, continuing without Redis","service":"novapay-transaction-backend","error":"Connection is closed."}
+{"timestamp":"2026-04-06T00:55:00.920Z","level":"info","message":"Metrics initialized","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T00:55:00.930Z","level":"info","message":"NovaPay Transaction Backend started on port 8080","service":"novapay-transaction-backend","port":"8080","environment":"development","version":"1.0.0"}
+{"timestamp":"2026-04-06T01:11:07.993Z","level":"info","message":"MongoDB reconnected","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T01:11:18.590Z","level":"warn","message":"MongoDB disconnected","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T01:11:18.805Z","level":"info","message":"MongoDB reconnected","service":"novapay-transaction-backend"}
+{"timestamp":"2026-04-06T01:13:32.490Z","level":"info","message":"Incoming request","service":"novapay-transaction-backend","requestId":"8f789014-d911-4b7b-81ee-a1ea4c4e73ab","method":"POST","url":"/api/accounts","userAgent":"PostmanRuntime/7.51.1","ip":"::1"}
+{"timestamp":"2026-04-06T01:13:33.849Z","level":"error","message":"Encryption failed","service":"novapay-transaction-backend","error":"Cannot read properties of undefined (reading 'generateDataKey')"}
+{"timestamp":"2026-04-06T01:13:33.852Z","level":"warn","message":"Metadata encryption failed; storing plaintext metadata","service":"novapay-transaction-backend","requestId":"8f789014-d911-4b7b-81ee-a1ea4c4e73ab","error":"Failed to encrypt sensitive data"}
+{"timestamp":"2026-04-06T01:13:34.280Z","level":"info","message":"Account created","service":"novapay-transaction-backend","requestId":"8f789014-d911-4b7b-81ee-a1ea4c4e73ab","userId":"user_655","accountNumber":"ACC_1775438013847_4JMUTXJKB","accountType":"individual","currency":"USD"}

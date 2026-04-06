@@ -1,0 +1,1932 @@
+{
+	"info": {
+		"_postman_id": "novapay-transaction-backend",
+		"name": "NovaPay Transaction Backend",
+		"description": "Complete API collection for NovaPay Transaction Backend - Fault-tolerant financial processing system",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://localhost:8080",
+			"type": "string"
+		},
+		{
+			"key": "requestId",
+			"value": "{{$randomUUID}}",
+			"type": "string"
+		},
+		{
+			"key": "employerId",
+			"value": "employer_123",
+			"type": "string"
+		},
+		{
+			"key": "sourceAccount",
+			"value": "ACC001",
+			"type": "string"
+		},
+		{
+			"key": "destinationAccount",
+			"value": "ACC002",
+			"type": "string"
+		},
+		{
+			"key": "employeeId",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "employeeAccount",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "employeeIds",
+			"value": "[]",
+			"type": "string"
+		},
+		{
+			"key": "userId",
+			"value": "user_123",
+			"type": "string"
+		},
+		{
+			"key": "accountNumber",
+			"value": "ACC001",
+			"type": "string"
+		},
+		{
+			"key": "transactionId",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "payrollJobId",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "fxQuoteId",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "entryId",
+			"value": "",
+			"type": "string"
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{authToken}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					"// Set request ID for tracing",
+					"pm.collectionVariables.set('requestId', pm.variables.replaceIn('{{$randomUUID}}'));",
+					"",
+					"// Add request ID to headers",
+					"pm.request.headers.add({",
+					"    key: 'X-Request-ID',",
+					"    value: pm.collectionVariables.get('requestId')",
+					"});"
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					"// Log response details",
+					"console.log('Response Status:', pm.response.code);",
+					"console.log('Response Time:', pm.response.responseTime);",
+					"console.log('Request ID:', pm.collectionVariables.get('requestId'));",
+					"",
+					"// Basic response validation",
+					"pm.test('Response has requestId', function() {",
+					"    const jsonData = pm.response.json();",
+					"    pm.expect(jsonData).to.have.property('requestId');",
+					"});"
+				]
+			}
+		}
+	],
+	"item": [
+		{
+			"name": "Account Service",
+			"item": [
+				{
+					"name": "Create Account",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"pm.test('Account created successfully', function() {",
+									"    pm.response.to.have.status(201);",
+									"});",
+									"",
+									"pm.test('Response has account details', function() {",
+									"    const jsonData = pm.response.json();",
+									"    pm.expect(jsonData).to.have.property('account');",
+									"    pm.expect(jsonData.account).to.have.property('accountNumber');",
+									"    pm.expect(jsonData.account).to.have.property('userId');",
+									"});"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"userId\": \"user_{{$randomInt}}\",\n    \"accountType\": \"individual\",\n    \"currency\": \"USD\",\n    \"metadata\": {\n        \"firstName\": \"John\",\n        \"lastName\": \"Doe\",\n        \"email\": \"john.doe@example.com\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/accounts",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"accounts"
+							]
+						}
+					}
+				},
+				{
+					"name": "Get User Accounts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/accounts/user/{{userId}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"accounts",
+								"user",
+								"{{userId}}"
+							]
+						}
+					}
+				},
+				{
+					"name": "Get Account Details",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/accounts/{{accountNumber}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"accounts",
+								"{{accountNumber}}"
+							]
+						}
+					}
+				},
+				{
+					"name": "Get Account Balance",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/accounts/{{accountNumber}}/balance",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"accounts",
+								"{{accountNumber}}",
+								"balance"
+							]
+						}
+					}
+				},
+				{
+					"name": "Freeze Amount",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"amount\": 100.00,\n    \"reason\": \"Transaction hold\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/accounts/{{accountNumber}}/freeze",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"accounts",
+								"{{accountNumber}}",
+								"freeze"
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Transaction Service",
+			"item": [
+				{
+					"name": "Initiate Transfer",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"pm.test('Transfer initiated successfully', function() {",
+									"    pm.response.to.have.status(201);",
+									"});",
+									"",
+									"pm.test('Response has transaction details', function() {",
+									"    const jsonData = pm.response.json();",
+									"    pm.expect(jsonData).to.have.property('transaction');",
+									"    pm.expect(jsonData.transaction).to.have.property('transactionId');",
+									"    pm.collectionVariables.set('transactionId', jsonData.transaction.transactionId);",
+									"});"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"idempotencyKey\": \"transfer_{{$randomInt}}_{{$timestamp}}\",\n    \"sourceAccount\": \"{{sourceAccount}}\",\n    \"destinationAccount\": \"{{destinationAccount}}\",\n    \"amount\": 100.00,\n    \"currency\": \"USD\",\n    \"description\": \"Test transfer via Postman\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/transactions/transfer",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"transactions",
+								"transfer"
+							]
+						}
+					}
+				},
+				{
+					"name": "Get Transaction Status",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/transactions/{{transactionId}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"transactions",
+								"{{transactionId}}"
+							]
+						}
+					}
+				},
+				{
+					"name": "Get Transaction History",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/transactions/history/{{accountNumber}}?page=1&limit=10",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"transactions",
+								"history",
+								"{{accountNumber}}"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "limit",
+									"value": "10"
+								}
+							]
+						}
+					}
+				},
+				{
+					"name": "Retry Failed Transaction",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/transactions/{{transactionId}}/retry",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"transactions",
+								"{{transactionId}}",
+								"retry"
+							]
+						}
+					}
+				},
+				{
+					"name": "Get Transaction Statistics",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/transactions/stats/summary",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"transactions",
+								"stats",
+								"summary"
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "FX Service",
+			"item": [
+				{
+					"name": "Create FX Quote",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"pm.test('FX quote created successfully', function() {",
+									"    pm.response.to.have.status(201);",
+									"});",
+									"",
+									"pm.test('Response has quote details', function() {",
+									"    const jsonData = pm.response.json();",
+									"    pm.expect(jsonData).to.have.property('quote');",
+									"    pm.expect(jsonData.quote).to.have.property('quoteId');",
+									"    pm.collectionVariables.set('fxQuoteId', jsonData.quote.quoteId);",
+									"});"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"sourceCurrency\": \"USD\",\n    \"targetCurrency\": \"EUR\",\n    \"sourceAmount\": 1000.00,\n    \"userId\": \"{{userId}}\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/fx/quote",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"fx",
+								"quote"
+							]
+						}
+					}
+				},
+				{
+					"name": "Get Quote Details",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/fx/quote/{{fxQuoteId}}?userId={{userId}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"fx",
+								"quote",
+								"{{fxQuoteId}}"
+							],
+							"query": [
+								{
+									"key": "userId",
+									"value": "{{userId}}"
+								}
+							]
+						}
+					}
+				},
+				{
+					"name": "Execute International Transfer",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"pm.test('International transfer completed', function() {",
+									"    pm.response.to.have.status(201);",
+									"});",
+									"",
+									"pm.test('Response has transfer details', function() {",
+									"    const jsonData = pm.response.json();",
+									"    pm.expect(jsonData).to.have.property('transfer');",
+									"    pm.expect(jsonData.transfer).to.have.property('transactionId');",
+									"});"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"idempotencyKey\": \"fx_transfer_{{$randomInt}}_{{$timestamp}}\",\n    \"sourceAccount\": \"{{sourceAccount}}\",\n    \"destinationAccount\": \"{{destinationAccount}}\",\n    \"amount\": 1000.00,\n    \"sourceCurrency\": \"USD\",\n    \"targetCurrency\": \"EUR\",\n    \"quoteId\": \"{{fxQuoteId}}\",\n    \"description\": \"International transfer test\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/fx/transfers/international",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"fx",
+								"transfers",
+								"international"
+							]
+						}
+					}
+				},
+				{
+					"name": "Get FX Rates",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/fx/rates?sourceCurrency=USD&targetCurrency=EUR",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"fx",
+								"rates"
+							],
+							"query": [
+								{
+									"key": "sourceCurrency",
+									"value": "USD"
+								},
+								{
+									"key": "targetCurrency",
+									"value": "EUR"
+								}
+							]
+						}
+					}
+				},
+				{
+					"name": "Get Quote History",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/fx/quotes/history/{{userId}}?page=1&limit=10",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"fx",
+								"quotes",
+								"history",
+								"{{userId}}"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "limit",
+									"value": "10"
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Employee Service",
+			"item": [
+				{
+					"name": "Create Employee",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"pm.test('Employee created successfully', function() {",
+									"    pm.response.to.have.status(201);",
+									"});",
+									"",
+									"pm.test('Response has employee details', function() {",
+									"    const jsonData = pm.response.json();",
+									"    pm.expect(jsonData).to.have.property('employee');",
+									"    pm.expect(jsonData.employee).to.have.property('employeeId');",
+									"    pm.collectionVariables.set('employeeId', jsonData.employee.employeeId);",
+									"});"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"employeeId\": \"emp_{{$randomInt}}\",\n    \"employerId\": \"ACC_1775414875164_VEOMG6AY1\",\n    \"personalInfo\": {\n        \"firstName\": \"John\",\n        \"lastName\": \"Doe\",\n        \"email\": \"john.doe@company.com\",\n        \"phone\": \"+1234567890\",\n        \"dateOfBirth\": \"1990-01-01\"\n    },\n    \"employment\": {\n        \"department\": \"Engineering\",\n        \"position\": \"Software Engineer\",\n        \"startDate\": \"2023-01-01\",\n        \"employmentType\": \"full-time\",\n        \"status\": \"active\"\n    },\n    \"compensation\": {\n        \"salary\": 2500.00,\n        \"currency\": \"USD\",\n        \"payFrequency\": \"monthly\",\n        \"bankAccount\": {\n            \"accountNumber\": \"ACC_1775414989072_8NKLQ7SMC\",\n            \"bankName\": \"Test Bank\",\n            \"routingNumber\": \"123456789\",\n            \"accountType\": \"checking\"\n        }\n    },\n    \"benefits\": {\n        \"healthInsurance\": true,\n        \"dentalInsurance\": true,\n        \"retirement401k\": true,\n        \"paidTimeOff\": 20\n    },\n    \"tax\": {\n        \"federalTaxWithholding\": 0.15,\n        \"stateTaxWithholding\": 0.05,\n        \"taxFilingStatus\": \"single\"\n    },\n    \"metadata\": {\n        \"emergencyContact\": {\n            \"name\": \"Jane Doe\",\n            \"relationship\": \"Spouse\",\n            \"phone\": \"+1234567891\"\n        },\n        \"notes\": \"Software engineer with 3 years experience\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/employees",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"employees"
+							]
+						}
+					}
+				},
+				{
+					"name": "Get Employee",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/employees/{{employeeId}}?employerId={{employerId}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"employees",
+								"{{employeeId}}"
+							],
+							"query": [
+								{
+									"key": "employerId",
+									"value": "{{employerId}}"
+								}
+							]
+						}
+					}
+				},
+				{
+					"name": "Get All Employees",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/employees?employerId={{employerId}}&page=1&limit=20",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"employees"
+							],
+							"query": [
+								{
+									"key": "employerId",
+									"value": "{{employerId}}"
+								},
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "limit",
+									"value": "20"
+								}
+							]
+						}
+					}
+				},
+				{
+					"name": "Update Employee",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"personalInfo\": {\n        \"firstName\": \"John\",\n        \"lastName\": \"Doe Updated\",\n        \"email\": \"john.doe.updated@company.com\",\n        \"phone\": \"+1234567890\"\n    },\n    \"employment\": {\n        \"position\": \"Senior Software Engineer\",\n        \"department\": \"Engineering\"\n    },\n    \"compensation\": {\n        \"salary\": 2800.00\n    }\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/employees/{{employeeId}}?employerId={{employerId}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"employees",
+								"{{employeeId}}"
+							],
+							"query": [
+								{
+									"key": "employerId",
+									"value": "{{employerId}}"
+								}
+							]
+						}
+					}
+				},
+				{
+					"name": "Update Employee Salary",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"salary\": 3000.00,\n    \"currency\": \"USD\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/employees/{{employeeId}}/salary?employerId={{employerId}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"employees",
+								"{{employeeId}}",
+								"salary"
+							],
+							"query": [
+								{
+									"key": "employerId",
+									"value": "{{employerId}}"
+								}
+							]
+						}
+					}
+				},
+				{
+					"name": "Terminate Employee",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"endDate\": \"2024-12-31\",\n    \"reason\": \"Company restructuring\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/employees/{{employeeId}}/terminate?employerId={{employerId}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"employees",
+								"{{employeeId}}",
+								"terminate"
+							],
+							"query": [
+								{
+									"key": "employerId",
+									"value": "{{employerId}}"
+								}
+							]
+						}
+					}
+				},
+				{
+					"name": "Delete Employee (Soft Delete)",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/employees/{{employeeId}}?employerId={{employerId}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"employees",
+								"{{employeeId}}"
+							],
+							"query": [
+								{
+									"key": "employerId",
+									"value": "{{employerId}}"
+								}
+							]
+						}
+					}
+				},
+				{
+					"name": "Get Active Employees for Payroll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/employees/payroll/active/{{employerId}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"employees",
+								"payroll",
+								"active",
+								"{{employerId}}"
+							]
+						}
+					}
+				},
+				{
+					"name": "Get Employee Statistics",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/employees/stats/{{employerId}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"employees",
+								"stats",
+								"{{employerId}}"
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Payroll Service",
+			"item": [
+				{
+					"name": "Create Payroll Job",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"pm.test('Payroll job created successfully', function() {",
+									"    pm.response.to.have.status(201);",
+									"});",
+									"",
+									"pm.test('Response has job details', function() {",
+									"    const jsonData = pm.response.json();",
+									"    pm.expect(jsonData).to.have.property('job');",
+									"    pm.expect(jsonData.job).to.have.property('jobId');",
+									"    pm.collectionVariables.set('payrollJobId', jsonData.job.jobId);",
+									"});"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"employerId\": \"employer_{{$randomInt}}\",\n    \"employerAccount\": \"{{sourceAccount}}\",\n    \"title\": \"Monthly Payroll\",\n    \"description\": \"Monthly salary disbursement\",\n    \"employees\": [\n        {\n            \"employeeId\": \"emp001\",\n            \"accountNumber\": \"{{destinationAccount}}\",\n            \"amount\": 2500.00,\n            \"currency\": \"USD\",\n            \"metadata\": {\n                \"employeeName\": \"John Doe\",\n                \"department\": \"Engineering\",\n                \"position\": \"Software Engineer\"\n            }\n        },\n        {\n            \"employeeId\": \"emp002\",\n            \"accountNumber\": \"{{destinationAccount}}\",\n            \"amount\": 2200.00,\n            \"currency\": \"USD\",\n            \"metadata\": {\n                \"employeeName\": \"Jane Smith\",\n                \"department\": \"Marketing\",\n                \"position\": \"Marketing Manager\"\n            }\n        }\n    ],\n    \"metadata\": {\n        \"idempotencyKey\": \"payroll_{{$randomInt}}_{{$timestamp}}\",\n        \"uploadedBy\": \"admin\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/payroll/jobs",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"payroll",
+								"jobs"
+							]
+						}
+					}
+				},
+				{
+					"name": "Get Active Employees (Prepare Payroll)",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"// Get employee IDs from database",
+									"const baseUrl = pm.collectionVariables.get('baseUrl');",
+									"const employerId = pm.collectionVariables.get('employerId');",
+									"",
+									"pm.sendRequest({",
+									"    url: `${baseUrl}/api/employees/payroll/active/${employerId}`,",
+									"    method: 'GET',",
+									"    header: {",
+									"        'Content-Type': 'application/json',",
+									"        'X-Request-ID': pm.collectionVariables.get('requestId')",
+									"    }",
+									"}, (err, response) => {",
+									"    if (err) {",
+									"        console.log('❌ Error:', err);",
+									"        return;",
+									"    }",
+									"    ",
+									"    if (response.code === 200) {",
+									"        const employees = response.json().employees;",
+									"        ",
+									"        if (employees.length > 0) {",
+									"            // Set first employee ID for single employee operations",
+									"            pm.collectionVariables.set('employeeId', employees[0].employeeId);",
+									"            pm.collectionVariables.set('employeeAccount', employees[0].accountNumber);",
+									"            ",
+									"            // Set all employee IDs for bulk operations",
+									"            const employeeIds = employees.map(emp => emp.employeeId);",
+									"            pm.collectionVariables.set('employeeIds', JSON.stringify(employeeIds));",
+									"            ",
+									"            console.log('✅ Employee IDs retrieved:');",
+									"            employees.forEach((emp, index) => {",
+									"                console.log(`   ${index + 1}. ${emp.employeeId} - ${emp.metadata.employeeName}`);",
+									"            });",
+									"        } else {",
+									"            console.log('❌ No active employees found');",
+									"        }",
+									"    } else {",
+									"        console.log('❌ Failed to get employees:', response.json());",
+									"    }",
+									"});"
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"pm.test('Active employees retrieved successfully', function() {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test('Response has employee data', function() {",
+									"    const jsonData = pm.response.json();",
+									"    pm.expect(jsonData).to.have.property('employees');",
+									"    ",
+									"    if (jsonData.employees.length > 0) {",
+									"        // Store employee data for use in other requests",
+									"        pm.collectionVariables.set('employeeId', jsonData.employees[0].employeeId);",
+									"        pm.collectionVariables.set('employeeAccount', jsonData.employees[0].accountNumber);",
+									"        ",
+									"        const employeeIds = jsonData.employees.map(emp => emp.employeeId);",
+									"        pm.collectionVariables.set('employeeIds', JSON.stringify(employeeIds));",
+									"    }",
+									"});"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/employees/payroll/active/{{employerId}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"employees",
+								"payroll",
+								"active",
+								"{{employerId}}"
+							]
+						}
+					}
+				},
+				{
+					"name": "Check Employee Transaction Status",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"pm.test('Transaction history retrieved successfully', function() {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test('Show employee transactions', function() {",
+									"    const jsonData = pm.response.json();",
+									"    const employeeId = pm.collectionVariables.get('employeeId');",
+									"    ",
+									"    console.log(`📊 Transactions for employee ${employeeId}:`);",
+									"    ",
+									"    if (jsonData.transactions && jsonData.transactions.length > 0) {",
+									"        const employeeTransactions = jsonData.transactions.filter(tx => ",
+									"            tx.metadata?.employeeId === employeeId || ",
+									"            tx.description?.includes(employeeId)",
+									"        );",
+									"        ",
+									"        if (employeeTransactions.length > 0) {",
+									"            console.log(`Found ${employeeTransactions.length} employee transactions:`);",
+									"            employeeTransactions.forEach((tx, index) => {",
+									"                console.log(`   ${index + 1}. ${tx.transactionId} - ${tx.amount} ${tx.currency} - ${tx.status}`);",
+									"                if (tx.status === 'completed') {",
+									"                    console.log(`      ✅ Transaction completed successfully!`);",
+									"                } else if (tx.status === 'pending') {",
+									"                    console.log(`      ⏳ Transaction is pending...`);",
+									"                } else if (tx.status === 'failed') {",
+									"                    console.log(`      ❌ Transaction failed!`);",
+									"                }",
+									"            });",
+									"        } else {",
+									"            console.log('No transactions found for this employee');",
+									"        }",
+									"    } else {",
+									"        console.log('No transactions found');",
+									"    }",
+									"});"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/transactions/history/{{employeeAccount}}?page=1&limit=10",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"transactions",
+								"history",
+								"{{employeeAccount}}"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "limit",
+									"value": "10"
+								}
+							]
+						}
+					}
+				},
+				{
+					"name": "Create Payroll Job from Employee Database",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"// Auto-fill employee IDs from stored variables",
+									"const employeeIds = pm.collectionVariables.get('employeeIds');",
+									"",
+									"if (employeeIds) {",
+									"    try {",
+									"        const ids = JSON.parse(employeeIds);",
+									"        console.log(`🔄 Auto-filling ${ids.length} employee IDs in payroll request`);",
+									"        ",
+									"        // Update the request body with employee IDs",
+									"        const body = JSON.parse(pm.request.body.raw);",
+									"        body.employeeIds = ids;",
+									"        pm.request.body.raw = JSON.stringify(body, null, 2);",
+									"        ",
+									"        console.log('Employee IDs to be used:', ids);",
+									"    } catch (error) {",
+									"        console.log('❌ Error parsing employee IDs:', error);",
+									"    }",
+									"} else {",
+									"    console.log('⚠️ No employee IDs found. Please run \"Get Active Employees (Prepare Payroll)\" first.');",
+									"}"
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"pm.test('Payroll job created from employees successfully', function() {",
+									"    pm.response.to.have.status(201);",
+									"});",
+									"",
+									"pm.test('Response has job details', function() {",
+									"    const jsonData = pm.response.json();",
+									"    pm.expect(jsonData).to.have.property('job');",
+									"    pm.expect(jsonData.job).to.have.property('jobId');",
+									"    pm.collectionVariables.set('payrollJobId', jsonData.job.jobId);",
+									"    ",
+									"    console.log(`✅ Payroll job created: ${jsonData.job.jobId}`);",
+									"    console.log(`   Employees: ${jsonData.job.employeeCount}`);",
+									"    console.log(`   Total: ${jsonData.job.totalAmount} ${jsonData.job.currency}`);",
+									"});"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"employerId\": \"{{employerId}}\",\n    \"employerAccount\": \"{{sourceAccount}}\",\n    \"title\": \"Monthly Payroll from Database\",\n    \"description\": \"Monthly salary disbursement using employee database\",\n    \"employeeIds\": [\"{{employeeId}}\"],\n    \"metadata\": {\n        \"idempotencyKey\": \"payroll_db_{{$randomInt}}_{{$timestamp}}\",\n        \"uploadedBy\": \"admin\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/payroll/jobs/from-employees",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"payroll",
+								"jobs",
+								"from-employees"
+							]
+						}
+					}
+				},
+				{
+					"name": "Get Payroll Job Status",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/payroll/jobs/{{payrollJobId}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"payroll",
+								"jobs",
+								"{{payrollJobId}}"
+							]
+						}
+					}
+				},
+				{
+					"name": "Get Employer Payroll Jobs",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/payroll/jobs/employer/{{employerId}}?page=1&limit=10",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"payroll",
+								"jobs",
+								"employer",
+								"{{employerId}}"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "limit",
+									"value": "10"
+								}
+							]
+						}
+					}
+				},
+				{
+					"name": "Cancel Payroll Job",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"reason\": \"Cancelled by admin\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/payroll/jobs/{{payrollJobId}}/cancel",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"payroll",
+								"jobs",
+								"{{payrollJobId}}",
+								"cancel"
+							]
+						}
+					}
+				},
+				{
+					"name": "Get Payroll Statistics",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/payroll/stats/employer/{{employerId}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"payroll",
+								"stats",
+								"employer",
+								"{{employerId}}"
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Ledger Service",
+			"item": [
+				{
+					"name": "Get Ledger Entry",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/ledger/entries/{{entryId}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"ledger",
+								"entries",
+								"{{entryId}}"
+							]
+						}
+					}
+				},
+				{
+					"name": "Get Transaction Ledger Entries",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/ledger/transactions/{{transactionId}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"ledger",
+								"transactions",
+								"{{transactionId}}"
+							]
+						}
+					}
+				},
+				{
+					"name": "Get Account Ledger Entries",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/ledger/accounts/{{accountNumber}}?page=1&limit=20",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"ledger",
+								"accounts",
+								"{{accountNumber}}"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "limit",
+									"value": "20"
+								}
+							]
+						}
+					}
+				},
+				{
+					"name": "Verify Ledger Integrity",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"pm.test('Ledger integrity check completed', function() {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test('Ledger is balanced', function() {",
+									"    const jsonData = pm.response.json();",
+									"    pm.expect(jsonData.integrity.isBalanced).to.be.true;",
+									"});"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/ledger/integrity/check",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"ledger",
+								"integrity",
+								"check"
+							]
+						}
+					}
+				},
+				{
+					"name": "Get Account Balance from Ledger",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/ledger/accounts/{{accountNumber}}/balance",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"ledger",
+								"accounts",
+								"{{accountNumber}}",
+								"balance"
+							]
+						}
+					}
+				},
+				{
+					"name": "Get Ledger Statistics",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/ledger/stats",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"ledger",
+								"stats"
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Admin Service",
+			"item": [
+				{
+					"name": "Get Dashboard",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/admin/dashboard",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"admin",
+								"dashboard"
+							]
+						}
+					}
+				},
+				{
+					"name": "Get System Health",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/admin/health",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"admin",
+								"health"
+							]
+						}
+					}
+				},
+				{
+					"name": "Get Failed Transactions",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/admin/transactions/failed?page=1&limit=20",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"admin",
+								"transactions",
+								"failed"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "limit",
+									"value": "20"
+								}
+							]
+						}
+					}
+				},
+				{
+					"name": "Get Pending Transactions",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/admin/transactions/pending",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"admin",
+								"transactions",
+								"pending"
+							]
+						}
+					}
+				},
+				{
+					"name": "Force Retry Transaction",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/admin/transactions/{{transactionId}}/retry",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"admin",
+								"transactions",
+								"{{transactionId}}",
+								"retry"
+							]
+						}
+					}
+				},
+				{
+					"name": "Get System Metrics",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/admin/metrics?period=24h",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"admin",
+								"metrics"
+							],
+							"query": [
+								{
+									"key": "period",
+									"value": "24h"
+								}
+							]
+						}
+					}
+				},
+				{
+					"name": "Cleanup Expired Data",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"dryRun\": true\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/admin/cleanup",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"admin",
+								"cleanup"
+							]
+						}
+					}
+				},
+				{
+					"name": "Get Audit Log",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/admin/audit?page=1&limit=50",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"admin",
+								"audit"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "limit",
+									"value": "50"
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Employee Payroll Workflow",
+			"description": "Automated workflow for employee payroll processing using database",
+			"item": [
+				{
+					"name": "1. Get Active Employees (Prepare Payroll)",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"// Get employee IDs from database",
+									"const baseUrl = pm.collectionVariables.get('baseUrl');",
+									"const employerId = pm.collectionVariables.get('employerId');",
+									"",
+									"pm.sendRequest({",
+									"    url: `${baseUrl}/api/employees/payroll/active/${employerId}`,",
+									"    method: 'GET',",
+									"    header: {",
+									"        'Content-Type': 'application/json',",
+									"        'X-Request-ID': pm.collectionVariables.get('requestId')",
+									"    }",
+									"}, (err, response) => {",
+									"    if (err) {",
+									"        console.log('❌ Error:', err);",
+									"        return;",
+									"    }",
+									"    ",
+									"    if (response.code === 200) {",
+									"        const employees = response.json().employees;",
+									"        ",
+									"        if (employees.length > 0) {",
+									"            // Set first employee ID for single employee operations",
+									"            pm.collectionVariables.set('employeeId', employees[0].employeeId);",
+									"            pm.collectionVariables.set('employeeAccount', employees[0].accountNumber);",
+									"            ",
+									"            // Set all employee IDs for bulk operations",
+									"            const employeeIds = employees.map(emp => emp.employeeId);",
+									"            pm.collectionVariables.set('employeeIds', JSON.stringify(employeeIds));",
+									"            ",
+									"            console.log('✅ Employee IDs retrieved:');",
+									"            employees.forEach((emp, index) => {",
+									"                console.log(`   ${index + 1}. ${emp.employeeId} - ${emp.metadata.employeeName}`);",
+									"            });",
+									"        } else {",
+									"            console.log('❌ No active employees found');",
+									"        }",
+									"    } else {",
+									"        console.log('❌ Failed to get employees:', response.json());",
+									"    }",
+									"});"
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"pm.test('Active employees retrieved successfully', function() {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test('Response has employee data', function() {",
+									"    const jsonData = pm.response.json();",
+									"    pm.expect(jsonData).to.have.property('employees');",
+									"    ",
+									"    if (jsonData.employees.length > 0) {",
+									"        // Store employee data for use in other requests",
+									"        pm.collectionVariables.set('employeeId', jsonData.employees[0].employeeId);",
+									"        pm.collectionVariables.set('employeeAccount', jsonData.employees[0].accountNumber);",
+									"        ",
+									"        const employeeIds = jsonData.employees.map(emp => emp.employeeId);",
+									"        pm.collectionVariables.set('employeeIds', JSON.stringify(employeeIds));",
+									"        ",
+									"        console.log(`🎯 Ready to process ${jsonData.employees.length} employees`);",
+									"    }",
+									"});"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/employees/payroll/active/{{employerId}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"employees",
+								"payroll",
+								"active",
+								"{{employerId}}"
+							]
+						}
+					}
+				},
+				{
+					"name": "2. Create Payroll from Employee IDs",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"// Auto-fill employee IDs from stored variables",
+									"const employeeIds = pm.collectionVariables.get('employeeIds');",
+									"",
+									"if (employeeIds && employeeIds !== '[]') {",
+									"    try {",
+									"        const ids = JSON.parse(employeeIds);",
+									"        console.log(`🔄 Auto-filling ${ids.length} employee IDs in payroll request`);",
+									"        ",
+									"        // Update request body with employee IDs",
+									"        const body = JSON.parse(pm.request.body.raw);",
+									"        body.employeeIds = ids;",
+									"        pm.request.body.raw = JSON.stringify(body, null, 2);",
+									"        ",
+									"        console.log('Employee IDs to be used:', ids);",
+									"    } catch (error) {",
+									"        console.log('❌ Error parsing employee IDs:', error);",
+									"    }",
+									"} else {",
+									"    console.log('⚠️ No employee IDs found. Please run Step 1 first.');",
+									"}"
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"pm.test('Payroll job created from employees successfully', function() {",
+									"    pm.response.to.have.status(201);",
+									"});",
+									"",
+									"pm.test('Response has job details', function() {",
+									"    const jsonData = pm.response.json();",
+									"    pm.expect(jsonData).to.have.property('job');",
+									"    pm.expect(jsonData.job).to.have.property('jobId');",
+									"    pm.collectionVariables.set('payrollJobId', jsonData.job.jobId);",
+									"    ",
+									"    console.log(`✅ Payroll job created: ${jsonData.job.jobId}`);",
+									"    console.log(`   Employees: ${jsonData.job.employeeCount}`);",
+									"    console.log(`   Total: ${jsonData.job.totalAmount} ${jsonData.job.currency}`);",
+									"    console.log(`   Status: ${jsonData.job.status}`);",
+									"});"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"employerId\": \"{{employerId}}\",\n    \"employerAccount\": \"{{sourceAccount}}\",\n    \"title\": \"Monthly Payroll from Database\",\n    \"description\": \"Monthly salary disbursement using employee database\",\n    \"employeeIds\": [\"{{employeeId}}\"],\n    \"metadata\": {\n        \"idempotencyKey\": \"payroll_db_{{$randomInt}}_{{$timestamp}}\",\n        \"uploadedBy\": \"workflow\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/payroll/jobs/from-employees",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"payroll",
+								"jobs",
+								"from-employees"
+							]
+						}
+					}
+				},
+				{
+					"name": "3. Check Payroll Status",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"pm.test('Payroll status retrieved successfully', function() {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test('Show payroll progress', function() {",
+									"    const jsonData = pm.response.json();",
+									"    const job = jsonData.job;",
+									"    ",
+									"    console.log(`📊 Payroll Status: ${job.status}`);",
+									"    console.log(`   Progress: ${job.progress.progressPercentage}%`);",
+									"    console.log(`   Processed: ${job.progress.processedCount}`);",
+									"    console.log(`   Success: ${job.progress.successCount}`);",
+									"    console.log(`   Failed: ${job.progress.failureCount}`);",
+									"    ",
+									"    if (job.status === 'completed') {",
+									"        console.log('🎉 Payroll processing completed successfully!');",
+									"    } else if (job.status === 'failed') {",
+									"        console.log('❌ Payroll processing failed!');",
+									"    } else {",
+									"        console.log('⏳ Payroll processing in progress...');",
+									"    }",
+									"});"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/payroll/jobs/{{payrollJobId}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"payroll",
+								"jobs",
+								"{{payrollJobId}}"
+							]
+						}
+					}
+				},
+				{
+					"name": "4. Check Employee Transaction Status",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"pm.test('Transaction history retrieved successfully', function() {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test('Show employee transactions', function() {",
+									"    const jsonData = pm.response.json();",
+									"    const employeeId = pm.collectionVariables.get('employeeId');",
+									"    ",
+									"    console.log(`🔍 Transactions for employee ${employeeId}:`);",
+									"    ",
+									"    if (jsonData.transactions && jsonData.transactions.length > 0) {",
+									"        const employeeTransactions = jsonData.transactions.filter(tx => ",
+									"            tx.metadata?.employeeId === employeeId || ",
+									"            tx.description?.includes(employeeId)",
+									"        );",
+									"        ",
+									"        if (employeeTransactions.length > 0) {",
+									"            console.log(`Found ${employeeTransactions.length} employee transactions:`);",
+									"            employeeTransactions.forEach((tx, index) => {",
+									"                console.log(`   ${index + 1}. ${tx.transactionId} - ${tx.amount} ${tx.currency} - ${tx.status}`);",
+									"                if (tx.status === 'completed') {",
+									"                    console.log(`      ✅ Transaction completed successfully!`);",
+									"                } else if (tx.status === 'pending') {",
+									"                    console.log(`      ⏳ Transaction is pending...`);",
+									"                } else if (tx.status === 'failed') {",
+									"                    console.log(`      ❌ Transaction failed!`);",
+									"                }",
+									"            });",
+									"        } else {",
+									"            console.log('No transactions found for this employee');",
+									"        }",
+									"    } else {",
+									"        console.log('No transactions found');",
+									"    }",
+									"});"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/transactions/history/{{employeeAccount}}?page=1&limit=10",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"transactions",
+								"history",
+								"{{employeeAccount}}"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "limit",
+									"value": "10"
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "System",
+			"item": [
+				{
+					"name": "Health Check",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/health",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"health"
+							]
+						}
+					}
+				},
+				{
+					"name": "Get Metrics",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/metrics",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"metrics"
+							]
+						}
+					}
+				}
+			]
+		}
+	]
+}
