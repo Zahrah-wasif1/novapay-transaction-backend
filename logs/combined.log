@@ -836,3 +836,4 @@
 {"timestamp":"2026-04-06T01:13:33.849Z","level":"error","message":"Encryption failed","service":"novapay-transaction-backend","error":"Cannot read properties of undefined (reading 'generateDataKey')"}
 {"timestamp":"2026-04-06T01:13:33.852Z","level":"warn","message":"Metadata encryption failed; storing plaintext metadata","service":"novapay-transaction-backend","requestId":"8f789014-d911-4b7b-81ee-a1ea4c4e73ab","error":"Failed to encrypt sensitive data"}
 {"timestamp":"2026-04-06T01:13:34.280Z","level":"info","message":"Account created","service":"novapay-transaction-backend","requestId":"8f789014-d911-4b7b-81ee-a1ea4c4e73ab","userId":"user_655","accountNumber":"ACC_1775438013847_4JMUTXJKB","accountType":"individual","currency":"USD"}
+{"timestamp":"2026-04-06T01:18:18.243Z","level":"info","message":"Received SIGINT. Starting graceful shutdown...","service":"novapay-transaction-backend"}
